@@ -17,13 +17,8 @@
 }
 
 body {
+  background: linear-gradient(to right, #4a1e99, #9b1b53); /* Darker color values */
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
