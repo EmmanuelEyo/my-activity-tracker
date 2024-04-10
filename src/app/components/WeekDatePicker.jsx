@@ -40,7 +40,7 @@ const WeekDatePicker = () => {
           </button>
         </div>
       ))}
-      <button onClick={handleNextWeek} className='mt-5 -mr-5'>
+      <button onClick={handleNextWeek} className='mt-5 lg:-mr-5 -mr-3'>
         <FaArrowCircleRight size={25} className='text-gray-600' />
       </button>
     </div>

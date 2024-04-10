@@ -33,7 +33,7 @@ const Header = () => {
                   Profile
                 </Link>
               )}
-              <div className="ml-auto">
+              <div className="lg:ml-auto mr-10">
                 <UserButton afterSignOutUrl='/' />
               </div>
             </div>
