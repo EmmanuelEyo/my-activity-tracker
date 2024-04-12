@@ -54,7 +54,15 @@ const Page = () => {
           </div>
           <Header />
           <div class="grid lg:grid-cols-3 lg:grid-rows-4 sm:grid-rows-7 sm:grid-cols-3 lg:gap-4">
-            <div class="lg:col-span-1 col-span-3 shadow-xl row-span-1 bg-orange-200 lg:w-full w-[21rem] lg:ml-0 ml-[40px] text-black p-10 space-y-10 rounded-lg">
+            <div class="lg:col-span-1 col-span-3 shadow-xl row-span-1 bg-orange-200 lg:w-full w-[21rem] lg:ml-0 ml-[40px] text-black p-10 space-y-10 rounded-lg" 
+            initial={{ x: 300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: 300, opacity: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            }}>
               <div className='flex mt-10 lg:-ml-0 -ml-1'>
                 <div>
                   <Image src='/sunset_logo.png' width={45} height={45} alt='sunset_logo' />

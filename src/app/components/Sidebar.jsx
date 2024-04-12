@@ -29,7 +29,7 @@ const Sidebar = ({ children }) => {
     return (
         <div className={`overflow-hidden transition-all ${expanded ? 'h-full top-0 fixed left-0 z-50 flex flex-col bg-white text-black overflow-auto pb-10 overflow-y-hidden w-60 shadow-md' : 'h-full w-10 top-0 fixed left-0 z-50 flex flex-col bg-white text-black overflow-auto pb-10 overflow-y-auto shadow-md'}`}>
             <div className='p-4 pb-2 flex justify-between items-center'>
-                <Image src='/fire_logo.png' width={30} height={30} alt='fire_logo' className={`overflow-hidden transition-all ${expanded ? 'width={30} height={30}' : 'w-0'}`} />
+                <Image src='/app-logo.png' width={30} height={30} alt='fire_logo' className={`overflow-hidden transition-all ${expanded ? 'width={30} height={30}' : 'w-0'}`} />
                 <button onClick={() => setExpanded(coll => !coll)} className={`${expanded ? 'rounded-lg bg-gray-50 p-1.5 text-2xl hover:bg-gray-100' : ' -ml-3 rounded-lg bg-gray-50 p-1.5 text-2xl hover:bg-gray-100'}`}>
                     {expanded ? <LuChevronFirst /> : <LuChevronLast />}
                 </button>
